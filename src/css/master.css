@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: yekan;
+  src: url(../asset/font/Yekan.ttf);
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.slideOutDown {
+  background-color: #3498db;
+  color: white;
+  animation-name: slideOutDown;
+  animation-duration: 0.4s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0;
+  height: 50px;
+}
+
+@keyframes slideOutDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.sideOut {
+  transition: linear 0.4s;
+  transform: translateX(0);
+}
+.sideIn {
+  transition: linear 0.4s;
+  transform: translateX(-1200px);
+}
+.acoordion {
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  height: 50px;
+  font-size: 14px;
+}
+
+#acoordion {
+  scrollbar-width: thin;
+}
+.show {
+  display: flex;
+  transition: all 0.4s ease-in-out;
+  max-height: 100px;
+}
+.border {
+  border: none;
+  padding: auto;
+  
+}
+.rotat {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+.shake {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  
+  padding: 1px;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}

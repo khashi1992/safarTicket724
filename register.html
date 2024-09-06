@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>ثبت نام</title>
+    <link rel="icon" type="image/png" href="asset/img/favicon-16x16.png" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/css/master.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <main class="w-full overflow-hidden relative">
+     
+      <section id="slider" class="w-full h-[130vh] md:h-[100vh] flex justify-center items-center ">
+        <!-- Swiper -->
+                 
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="bg-bg2 w-full h-full bg-cover bg-center"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="bg-bg3 w-full h-full bg-cover bg-center"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="bg-bg4 w-full h-full bg-cover bg-center"></div>
+                        </div>
+                    
+                     
+                      </div>
+                     
+                    </div>
+                  
+
+        <!-- Swiper JS -->
+        <section class="w-[400px] h-[800px] bg-white absolute top-10 z-50">
+                <section class="row h-full justify-center items-center gap-1 *:flex *:justify-center *:items-center *:w-full *:h-1/13">
+                        <div class="">
+                            <figure class="w-full h-full  flex-wrap flex justify-center items-center">
+                                <img id="imgReg" class="w-1/3 h-1/3 object-cover cursor-pointer" src="src/asset/img/logo.png" alt="">
+                                <figcaption class="w-full text-2xl font-black flex justify-center items-center py-2">ثبت نام</figcaption>
+                            </figure>
+                        </div>
+                        <div class="">
+                           <span>لطفا مشخصات خود را جهت ثبت نام وارد نمایید</span>
+                        </div>
+                        <div class="">
+                            <div class="w-[80%] border">
+
+                            </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border flex items-center h-[30px]">
+                            <div class="flex items-center px-2 border-l-2"><span class="material-symbols-outlined">
+                              person
+                              </span></div>
+                              <input type="text" class="px-2 w-full h-full focus:border-[#2d2d2d]"  placeholder="نام" id="fname" required>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border flex items-center h-[30px]">
+                            <div class="flex items-center px-2 border-l-2"><span class="material-symbols-outlined">
+                              person
+                              </span></div>
+                              <input type="text" class="px-2 w-full h-full focus:border-[#2d2d2d]"  placeholder="نام خانوادگی"  id="lname" required>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border flex items-center h-[30px]">
+                            <div class="flex items-center px-2 border-l-2"><span class="material-symbols-outlined">
+                              call
+                              </span></div>
+                              <input type="text" class="px-2 w-full h-full focus:border-[#2d2d2d]" placeholder="تلفن همراه" id="phone" required>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border flex items-center h-[30px]">
+                            <div class="flex items-center px-2 border-l-2"><span class="material-symbols-outlined">
+                              mail
+                              </span></div>
+                              <input type="email" class="px-2 w-full h-full focus:border-[#2d2d2d]" placeholder="پست الکترونیکی" id="email" required>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border flex items-center h-[30px]">
+                            <div class="flex items-center px-2 border-l-2"><span class="material-symbols-outlined">
+                              lock
+                              </span></div>
+                              <input type="text" class="px-2 w-full h-full focus:border-[#2d2d2d]" placeholder="رمز عبور" id="pass" required>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border flex items-center h-[30px]">
+                            <div class="flex items-center px-2 border-l-2"><span class="material-symbols-outlined">
+                              key
+                              </span></div>
+                              <input type="text" class="px-2 w-full h-full focus:border-[#2d2d2d]" placeholder="تکرار رمز عبور" id="repeatPass" required>
+                          </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="w-[50%] ">
+                                <button id="btnReg" class="text-white bg-[rgb(52,152,219)] w-full h-full p-1">ثبت نام</button>
+                            </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[80%] border">
+
+                          </div>
+                      </div>
+                        <div class="flex-wrap *:w-full">
+                              <div class="flex items-center justify-center">
+                                  <p>حساب کاربری دارید ؟</p>
+                              </div>
+                              <div class="flex items-center justify-center">
+                                  <a class="underline" href="login.html">ورود</a>
+                              </div>
+                        </div>
+                        <div class="">
+                          <div class="w-[50%] ">
+                              <button onclick="func(this)" class="text-white bg-[rgb(149,165,166)] w-full h-full p-1">خانه </button>
+                          </div>
+                      </div>
+                </section>
+        </section>
+      </section>
+     
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="src/script/slide.js"></script>
+    <script src="src/script/registerApi.js"></script>
+    <script src="src/script/script.js"></script>
+  </body>
+</html>
